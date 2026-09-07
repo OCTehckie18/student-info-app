@@ -459,7 +459,8 @@ footer hr {
 }
 
 footer > p,
-footer > address {
+footer > address,
+footer > h2 {
   max-width: var(--max-width);
   margin-right: auto;
   margin-left: auto;
@@ -467,16 +468,28 @@ footer > address {
   padding-left: 24px;
 }
 
-footer > p:first-of-type {
+footer > h2 {
   margin-top: 0;
   padding-top: 32px;
-  margin-bottom: 6px;
+  margin-bottom: 16px;
   color: var(--black);
 }
 
 footer address {
+  display: grid;
+  gap: 8px;
   color: var(--gray-700);
   font-style: normal;
+}
+
+footer address p {
+  margin: 0;
+}
+
+footer address strong {
+  display: inline-block;
+  min-width: 64px;
+  color: var(--black);
 }
 
 footer address a {
@@ -587,7 +600,8 @@ summary:focus-visible {
   }
 
   footer > p,
-  footer > address {
+  footer > address,
+  footer > h2 {
     padding-right: 16px;
     padding-left: 16px;
   }
