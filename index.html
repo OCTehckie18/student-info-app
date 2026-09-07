@@ -27,6 +27,14 @@
       <section id="overview" aria-labelledby="overview-title">
         <h2 id="overview-title">Good morning, Aanya</h2>
         <p>Here is your latest student snapshot for the Spring 2025 term.</p>
+        <button type="button" id="details-button" aria-expanded="false" aria-controls="student-details">Show Details</button>
+
+        <div id="student-details" hidden>
+          <h3>Additional student information</h3>
+          <p><strong>Email:</strong> aanya.sharma@northstar.example</p>
+          <p><strong>Enrollment date:</strong> August 12, 2021</p>
+          <p><strong>Emergency contact:</strong> Priya Sharma · <a href="tel:+918000000001">+91 80000 00001</a></p>
+        </div>
 
         <table>
           <caption>
@@ -245,5 +253,7 @@
         >
       </p>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
